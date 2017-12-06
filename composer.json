@@ -29,6 +29,6 @@
         }
     },
     "scripts": {
-        "post-package-install": "CDN\\CDNServiceProvider::install"
+        "post-package-install": "\\CDN\\CDNServiceProvider::install"
     }
 }
