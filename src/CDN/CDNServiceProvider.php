@@ -4,7 +4,8 @@
 
     use Illuminate\Support\ServiceProvider;
     use League\Flysystem\Filesystem;
-    use League\Flysystem\Sftp\SftpAdapter;
+    //use League\Flysystem\Sftp\SftpAdapter;
+    use CDN\SftpCustomAdapter;
     
     class CDNServiceProvider extends ServiceProvider{
         /**
@@ -20,7 +21,7 @@
             $filesystem = $this->app->make('filesystem');
     
             $filesystem->extend('sftp', function($app, $config) {
-                return new Filesystem(new SftpAdapter($config));
+                return new Filesystem(new SftpCustomAdapter($config));
             });
 
             
