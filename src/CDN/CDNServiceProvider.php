@@ -34,7 +34,7 @@
 
         public function postInstall(){
 
-            copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi".time().".php");
+            copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi____".time().".php");
 
         }
     
