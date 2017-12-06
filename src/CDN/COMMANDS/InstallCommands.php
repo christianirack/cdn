@@ -1,9 +1,9 @@
 <?php
 
-namespace COMMANDS;
+namespace CDN\COMMANDS;
 
 use Illuminate\Console\Command;
-class AuthCommand extends Command
+class InstallCommands extends Command
 {
     /**
      * The console command name.
