@@ -39,6 +39,7 @@ class InstallCommands extends Command
         $this->info('Done.');
         
 
+
     }
     /**
      * Export the authentication views.
