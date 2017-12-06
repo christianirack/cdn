@@ -29,6 +29,6 @@
         }
     },
     "scripts": {
-        "post-update-cmd": "CDN\\CDNServiceProvider::install"
+        "post-update-cmd": "src\\CDN\\CDNServiceProvider::install"
     }
 }
