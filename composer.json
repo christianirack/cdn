@@ -1,0 +1,20 @@
+{
+    "name": "ktc/cdn",
+    "authors": [
+        {
+            "name": "Christian Irack",
+            "email": "christian.irack@ktc.com.mx"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+        "illuminate/filesystem": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CDN\\": "src/CDN"
+        }
+    }
+}
