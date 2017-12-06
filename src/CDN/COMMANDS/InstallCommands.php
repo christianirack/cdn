@@ -37,6 +37,7 @@ class InstallCommands extends Command
         $this->info('Creating the remote directory...');
         exec('envoy run cdn');
         $this->info('Done.');
+        
 
     }
     /**
