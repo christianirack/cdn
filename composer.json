@@ -33,5 +33,6 @@
     },
     "scripts": {
         "post-update-cmd": "CDN\\INSTALL\\CDNInstall::install"
+        
     }
 }
