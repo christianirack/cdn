@@ -1,6 +1,6 @@
 <?php
 
-namespace CDN;
+    namespace CDN;
 
     use Illuminate\Support\ServiceProvider;
     use League\Flysystem\Filesystem;
@@ -22,7 +22,7 @@ namespace CDN;
             $filesystem->extend('sftp', function($app, $config) {
                 return new Filesystem(new SftpAdapter($config));
             });
-            
+
             
     
         }
