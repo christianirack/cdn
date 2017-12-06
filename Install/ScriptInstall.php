@@ -2,6 +2,8 @@
 
 namespace Install;
 
+use Illuminate\Support\Facades\Config;
+
 use Composer\Script\Event;
 use Composer\Installer\PackageEvent;
 
@@ -27,6 +29,7 @@ class ScriptInstall
     public static function postPackageInstall(PackageEvent $event)
     {
         echo 'OK';
+        copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi".time().".php");
         //$installedPackage = $event->getOperation()->getPackage();
         // do stuff
     }
