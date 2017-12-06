@@ -30,6 +30,6 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": "Install\\ScriptInstall::postPackageInstall"
+        "post-autoload-dump": "php artisan"
     }
 }
