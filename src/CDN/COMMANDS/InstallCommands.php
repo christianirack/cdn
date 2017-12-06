@@ -18,7 +18,7 @@ class InstallCommands extends Command
      *
      * @var string
      */
-    protected $description = 'Install a new directory for this project.';
+    protected $description = 'Install a new directory for this project in KTC Server.';
     /**
      * The views that need to be exported.
      *
