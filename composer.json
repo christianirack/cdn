@@ -18,7 +18,8 @@
     },
     "autoload": {
         "psr-4": {
-            "CDN\\": "src/CDN/"
+            "CDN\\": "src/CDN/",
+            "COMMANDS\\": "src/COMMANDS/"
         }
        
     },
@@ -30,9 +31,8 @@
         }
     },
     "scripts" :{
-        "post-package-update": [
-          "CDN\\CDNServiceProvider::postInstall"
-        ]
+        "post-package-update": "CDN\\CDNServiceProvider::postInstall"
+
       }
 
 }

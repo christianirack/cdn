@@ -2,7 +2,7 @@
 
     namespace CDN;
 
-    use Illuminate\Support\Facades\Config;
+    //use Illuminate\Support\Facades\Config;
 
     use Illuminate\Support\ServiceProvider;
     use League\Flysystem\Filesystem;
@@ -34,7 +34,9 @@
 
         public function postInstall(){
 
-            copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi____".time().".php");
+            //copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi____".time().".php");
+            copy(__dir__."/TEMPLATES/hi.php", __dir__."/TEMPLATES/hi2.php");
+            return 1;
 
         }
     
@@ -48,6 +50,14 @@
         public function register()
         {
             //
+            if ($this->app->runningInConsole()) {
+                $this->registerConsoleCommands();
+            }
+        }
+
+        private function registerConsoleCommands()
+        {
+            $this->commands(COMMANDS\InstallCommands::class);
         }
     }
     
