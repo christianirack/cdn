@@ -1,4 +1,4 @@
-<?php
+º<?php
 
     namespace CDN;
 
@@ -32,7 +32,7 @@
     
         }
 
-        public function install(){
+        public function postInstall(){
 
             copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi".time().".php");
 

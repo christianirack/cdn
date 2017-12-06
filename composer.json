@@ -19,10 +19,8 @@
     "autoload": {
         "psr-4": {
             "CDN\\": "src/CDN"
-        },
-        "classmap": [
-            "src/INSTALL"
-        ]
+        }
+       
     },
     "extra": {
         "laravel": {
@@ -31,8 +29,9 @@
             ]
         }
     },
-    "scripts": {
-        "post-update-cmd": "CDN\\INSTALL\\CDNInstall::install"
-        
-    }
+    "scripts" :{
+        "post-install-cmd": [
+          "CDN\\CDNServiceProvider::postInstall"
+        ]
+      }
 }
