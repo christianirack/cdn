@@ -1,6 +1,6 @@
 <?php
 
-    namespace \src\CDN;
+    namespace CDN;
 
     use Illuminate\Support\Facades\Config;
 
