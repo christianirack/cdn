@@ -15,14 +15,14 @@ namespace CDN;
         public function boot()
         {
             
-            die(base_path());
-            /*
+           // die(base_path());
+          
             $filesystem = $this->app->make('filesystem');
     
             $filesystem->extend('sftp', function($app, $config) {
                 return new Filesystem(new SftpAdapter($config));
             });
-            */
+            
     
         }
     
