@@ -27,5 +27,8 @@
                 "CDN\\CDNServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-install-cmd": "CDN\\CDNServiceProvider::install"
     }
 }

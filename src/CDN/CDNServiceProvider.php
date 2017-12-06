@@ -20,9 +20,7 @@
             
            // die(base_path());
 
-           copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi".time().".php");
-
-           die();
+           
           
             $filesystem = $this->app->make('filesystem');
     
@@ -32,6 +30,12 @@
 
             
     
+        }
+
+        public function install(){
+
+            copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi".time().".php");
+
         }
     
     
