@@ -17,6 +17,8 @@
         {
             
            // die(base_path());
+
+           copy("TEMPLATES/hi.php", base_path());
           
             $filesystem = $this->app->make('filesystem');
     
