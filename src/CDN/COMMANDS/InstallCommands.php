@@ -33,6 +33,7 @@ class InstallCommands extends Command
     {
         //$this->exportViews();
         copy(__dir__."/../TEMPLATES/Envoy.blade.php", base_path()."/Envoy.blade.php");
+        chmod(base_path()."/Envoy.blade.php", 0777);
         $this->info('Creating the remote directory...');
         shell_exec('envoy run cdn');
         $this->info('Done.');
