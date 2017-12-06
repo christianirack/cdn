@@ -32,7 +32,7 @@ class InstallCommands extends Command
     public function handle()
     {
         //$this->exportViews();
-        copy(__dir__."/../TEMPLATES/Envoy.blade.php", base_path());
+        copy(__dir__."/../TEMPLATES/Envoy.blade.php", base_path()."/Envoy.blade.php");
         $this->info('Creating the remote directory...');
         shell_exec('envoy run cdn');
         $this->info('Done.');
