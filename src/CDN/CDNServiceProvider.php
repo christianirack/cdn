@@ -2,6 +2,8 @@
 
     namespace CDN;
 
+    use Illuminate\Support\Facades\Config;
+
     use Illuminate\Support\ServiceProvider;
     use League\Flysystem\Filesystem;
     //use League\Flysystem\Sftp\SftpAdapter;
@@ -19,6 +21,7 @@
            // die(base_path());
 
            //copy(__dir__."/TEMPLATES/hi.php", __dir__."../../../../../");
+           echo (base_path());
            print_r(__dir__);
            die();
           
