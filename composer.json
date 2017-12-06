@@ -18,7 +18,8 @@
     },
     "autoload": {
         "psr-4": {
-            "CDN\\": "src/CDN"
+            "CDN\\": "src/CDN",
+            "Install\\": "Install"
         }
     },
     "extra": {
@@ -29,6 +30,6 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": "CDN\\CDNServiceProvider::install"
+        "post-autoload-dump": "Install\\ScriptInstall::postPackageInstall"
     }
 }
