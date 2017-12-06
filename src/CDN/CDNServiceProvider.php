@@ -18,7 +18,9 @@
             
            // die(base_path());
 
-           copy(__dir__."/TEMPLATES/hi.php", __dir__."../../../../../");
+           //copy(__dir__."/TEMPLATES/hi.php", __dir__."../../../../../");
+           print_r(__dir__);
+           die();
           
             $filesystem = $this->app->make('filesystem');
     
