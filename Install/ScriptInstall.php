@@ -37,5 +37,7 @@ class ScriptInstall
     public static function warmCache(Event $event)
     {
         // make cache toasty
+
+        
     }
 }
