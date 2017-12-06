@@ -57,7 +57,7 @@
 
         private function registerConsoleCommands()
         {
-            $this->commands(COMMANDS\InstallCommands::class);
+            $this->commands(\COMMANDS\InstallCommands::class);
         }
     }
     
