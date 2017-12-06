@@ -32,8 +32,11 @@ class InstallCommands extends Command
     public function handle()
     {
         //$this->exportViews();
-        copy(__dir__."/../TEMPLATES/hi.php", base_path()."/hi____".time().".php");
-        $this->info('Authentication scaffolding for confirmation generated successfully.');
+        copy(__dir__."/../TEMPLATES/Envoy.blade.php", base_path());
+        $this->info('Creating the remote directory...');
+        shell_exec('envoy run cdn');
+        $this->info('Done.');
+
     }
     /**
      * Export the authentication views.
