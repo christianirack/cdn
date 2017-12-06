@@ -20,7 +20,7 @@
             
            // die(base_path());
 
-           copy(__dir__."/TEMPLATES/hi.".time().".php", base_path());
+           copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi".time().".php");
 
            die();
           
