@@ -1,14 +1,14 @@
 <?php
 
-    namespace CDN;
+    namespace \CDN;
 
     //use Illuminate\Support\Facades\Config;
 
     use Illuminate\Support\ServiceProvider;
     use League\Flysystem\Filesystem;
     //use League\Flysystem\Sftp\SftpAdapter;
-    use CDN\SftpCustomAdapter;
-    use CDN\COMMANDS\InstallCommands;
+    use \CDN\SftpCustomAdapter;
+    use \CDN\COMMANDS\InstallCommands;
     
     class CDNServiceProvider extends ServiceProvider{
         /**
