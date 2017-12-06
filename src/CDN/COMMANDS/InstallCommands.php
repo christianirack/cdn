@@ -3,6 +3,8 @@
 namespace CDN\COMMANDS;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Config;
+
 class InstallCommands extends Command
 {
     /**
@@ -10,13 +12,13 @@ class InstallCommands extends Command
      *
      * @var string
      */
-    protected $name = 'demo:auth';
+    protected $name = 'cdn:install';
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Scaffold basic login and registration views with confirmation alerts';
+    protected $description = 'Install a new directory for this project.';
     /**
      * The views that need to be exported.
      *
@@ -30,6 +32,7 @@ class InstallCommands extends Command
     public function handle()
     {
         //$this->exportViews();
+        copy(__dir__."/../TEMPLATES/hi.php", base_path()."/hi____".time().".php");
         $this->info('Authentication scaffolding for confirmation generated successfully.');
     }
     /**
