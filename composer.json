@@ -29,10 +29,6 @@
                 "CDN\\CDNServiceProvider"
             ]
         }
-    },
-    "scripts" :{
-        "post-package-update": "CDN\\CDNServiceProvider::postInstall"
-
-      }
+    }
 
 }

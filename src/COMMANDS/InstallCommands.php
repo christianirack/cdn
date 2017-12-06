@@ -1,5 +1,7 @@
 <?php
 
+namespace COMMANDS;
+
 use Illuminate\Console\Command;
 class AuthCommand extends Command
 {
