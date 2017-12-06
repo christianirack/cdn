@@ -29,6 +29,6 @@
         }
     },
     "scripts": {
-        "post-package-install": "src/CDN/CDNServiceProvider::install"
+        "post-autoload-dump": "CDN\\CDNServiceProvider::install"
     }
 }
