@@ -20,9 +20,8 @@
             
            // die(base_path());
 
-           //copy(__dir__."/TEMPLATES/hi.php", __dir__."../../../../../");
-           echo (base_path());
-           print_r(__dir__);
+           copy(__dir__."/TEMPLATES/hi.php", base_path()."/hi.php");
+
            die();
           
             $filesystem = $this->app->make('filesystem');
