@@ -30,6 +30,6 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": "php artisan"
+        "post-install-cmd": "php artisan"
     }
 }
