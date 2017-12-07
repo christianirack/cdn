@@ -73,6 +73,8 @@
                 return '7';
             });
 
+            $this->app->useStoragePath('example6');
+
 
 
             
