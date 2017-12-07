@@ -41,6 +41,11 @@
             if ($this->app->runningInConsole()) {
                 $this->registerConsoleCommands();
             }
+            $this->app->bind('path.storage', function () {
+                
+                        return 'your/path/here';
+                
+            });
         }
 
         private function registerConsoleCommands()
