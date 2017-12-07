@@ -1,20 +1,21 @@
 {
     "name": "ktc/cdn",
     "description": "Content server for Lavavel/Voyager KTC",
+    "homepage": "https://the-control-group.github.io/voyager/",
+    "license": "MIT",
+    "type": "project",
     "keywords": [
         "cdn",
         "laravel",
         "voyager"
     ],
-    "license": "MIT",
-    "type": "project",
     "authors": [
         {
             "name": "Christian Irack",
             "email": "christian.irack@ktc.com.mx"
         }
     ],
-    "minimum-stability": "stable",
+    
     "require": {
         "php": ">=7.0.0",
         "illuminate/support": "^5.0",
@@ -32,6 +33,7 @@
             "src/CustomHelpers.php"
         ]
     },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
