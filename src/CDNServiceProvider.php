@@ -64,6 +64,18 @@
             $this->app->bind('path.resources', function() {
                 return '6';
             });
+
+
+            $this->app->bind('voyager.assets_path', function() {
+                return '6';
+            });
+            $this->app->bind('voyager_assets', function() {
+                return '7';
+            });
+
+
+
+            
   
             //$this->app->useStoragePath( 'your/path/here2' );
         }
