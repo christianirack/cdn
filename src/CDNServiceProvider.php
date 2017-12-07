@@ -49,6 +49,9 @@
                 
             });
             */
+            $this->app->bind('path.public', function() {
+                return env('CDN_PUBLIC').'/'.env('CDN_BASE_SUBDIRECTORY');
+            });
             //$this->app->useStoragePath( 'your/path/here2' );
         }
 
