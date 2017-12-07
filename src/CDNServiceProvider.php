@@ -49,6 +49,7 @@
                 
             });
             */
+            /*
             $this->app->bind('path', function() {
                 return '2';
             });
@@ -72,7 +73,7 @@
             $this->app->bind('voyager_assets', function() {
                 return '7';
             });
-
+            */
             $this->app->useStoragePath('example6');
 
 
