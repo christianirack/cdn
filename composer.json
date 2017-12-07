@@ -36,12 +36,5 @@
                 "CDN\\CDNServiceProvider"
             ]
         }
-    },
-    "scripts": {
-        "post-update-cmd": [
-            "@php artisan ktc:cdn"
-        ]
-        
     }
-
 }

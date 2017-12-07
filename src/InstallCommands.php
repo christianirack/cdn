@@ -36,7 +36,7 @@ class InstallCommands extends Command
         chmod(base_path()."/Envoy.blade.php", 0777);
         $this->info('Creating the remote directory...');
        exec('envoy run cdn');
-        $this->info('Done.');
+        $this->info('The repository is done in: '.getenv('CDN_PUBLIC').'/'.env('CDN_BASE_SUBDIRECTORY'));
     
 
     }
