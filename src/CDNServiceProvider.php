@@ -49,7 +49,11 @@
                 
             });
             */
-            /*
+
+
+
+
+         
             $this->app->bind('path', function() {
                 return '2';
             });
@@ -65,15 +69,13 @@
             $this->app->bind('path.resources', function() {
                 return '6';
             });
-
-
             $this->app->bind('voyager.assets_path', function() {
-                return '6';
-            });
-            $this->app->bind('voyager_assets', function() {
                 return '7';
             });
-            */
+            $this->app->bind('voyager_assets', function() {
+                return '8';
+            });
+          
             //$this->app->useStoragePath(config('what_ever_you_want'));
 
 
