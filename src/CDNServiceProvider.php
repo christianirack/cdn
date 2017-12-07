@@ -41,7 +41,7 @@
                 $this->registerConsoleCommands();
             }
             if ($this->app->environment('local')) {
-                $this->app->register(\CDN\CDNServiceProvide::class);
+                $this->app->register(CDN\CDNServiceProvide::class);
             }
             // env('APP_STORAGE')
             /*
