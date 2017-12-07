@@ -41,12 +41,15 @@
             if ($this->app->runningInConsole()) {
                 $this->registerConsoleCommands();
             }
+            // env('APP_STORAGE')
+            /*
             $this->app->bind('path.storage', function () {
                 
                         return 'your/path/here';
                 
             });
-            $this->app->useStoragePath( 'your/path/here2' );
+            */
+            //$this->app->useStoragePath( 'your/path/here2' );
         }
 
         private function registerConsoleCommands()
