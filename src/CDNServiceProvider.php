@@ -46,6 +46,7 @@
                         return 'your/path/here';
                 
             });
+            $app->useStoragePath( 'your/path/here2' );
         }
 
         private function registerConsoleCommands()
