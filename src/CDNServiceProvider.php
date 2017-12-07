@@ -40,6 +40,9 @@
             if ($this->app->runningInConsole()) {
                 $this->registerConsoleCommands();
             }
+            if ($this->app->environment('local')) {
+                $this->app->register(\CDN\CDNServiceProvide::class);
+            }
             // env('APP_STORAGE')
             /*
             $this->app->bind('path.storage', function () {
