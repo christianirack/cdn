@@ -98,7 +98,8 @@ class SftpCustomAdapter extends AbstractFtpAdapter
     public function getUrl(){
         //return $this->getDriver;
         //hack
-        return $this->url;
+        //return $this->url;
+        return 'exampleGetUrl';
     }
 
     /**
