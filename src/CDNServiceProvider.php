@@ -27,9 +27,6 @@
                 return new Filesystem(new SftpCustomAdapter($config));
             });
 
-            $this->say();
-
-            
     
         }
         /**
@@ -60,10 +57,6 @@
             
   
             //$this->app->useStoragePath( 'your/path/here2' );
-        }
-
-        public function say() {
-            return 'hi';
         }
         
         private function registerConsoleCommands()

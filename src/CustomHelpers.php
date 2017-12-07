@@ -4,3 +4,5 @@ function say($path)
 {
     return $path;
 }
+
+?>
