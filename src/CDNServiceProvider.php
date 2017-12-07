@@ -49,9 +49,22 @@
                 
             });
             */
-            $this->app->bind('path.public', function() {
-                return env('CDN_PUBLIC').'/'.env('CDN_BASE_SUBDIRECTORY');
+            $this->app->bind('path', function() {
+                return '2';
             });
+            $this->app->bind('path.base', function() {
+                return '3';
+            });
+            $this->app->bind('path.public', function() {
+                return '4';
+            });
+            $this->app->bind('path.storage', function() {
+                return '5';
+            });
+            $this->app->bind('path.resources', function() {
+                return '6';
+            });
+  
             //$this->app->useStoragePath( 'your/path/here2' );
         }
 
