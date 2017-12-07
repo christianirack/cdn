@@ -30,6 +30,8 @@
         }
        
     },
+    "files": ["src/CustomHelpers.php"],
+
     "extra": {
         "laravel": {
             "providers": [

@@ -49,7 +49,7 @@
                 
             });
             */
-            $this->say();
+            return $this->say();
             
 
 
