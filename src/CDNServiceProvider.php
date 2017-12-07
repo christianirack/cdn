@@ -49,32 +49,11 @@
                 
             });
             */
+            $this->say();
+            
 
 
 
-
-         
-            $this->app->bind('path', function() {
-                return '2';
-            });
-            $this->app->bind('path.base', function() {
-                return '3';
-            });
-            $this->app->bind('path.public', function() {
-                return '4';
-            });
-            $this->app->bind('path.storage', function() {
-                return '5';
-            });
-            $this->app->bind('path.resources', function() {
-                return '6';
-            });
-            $this->app->bind('voyager.assets_path', function() {
-                return '7';
-            });
-            $this->app->bind('voyager_assets', function() {
-                return '8';
-            });
           
             //$this->app->useStoragePath(config('what_ever_you_want'));
 
@@ -85,6 +64,10 @@
             //$this->app->useStoragePath( 'your/path/here2' );
         }
 
+        public static function say() {
+            return 'hi';
+        }
+        
         private function registerConsoleCommands()
         {
             $this->commands(InstallCommands::class);
