@@ -100,6 +100,8 @@ class SftpCustomAdapter extends AbstractFtpAdapter
         //hack
         //return $this->url;
         return 'http://exampleGetUrl.com/demo';
+
+        
     }
 
     /**
