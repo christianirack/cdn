@@ -1,8 +1,8 @@
 <?php
 
-function say($path)
+function CDN($file)
 {
-    return $path;
+    return env('CDN_BASE').'/'.env('CDN_BASE_SUBDIRECTORY').'/'.$file;
 }
 
 ?>
