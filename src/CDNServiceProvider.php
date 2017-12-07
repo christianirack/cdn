@@ -42,23 +42,6 @@
             }
        
 
-            // env('APP_STORAGE')
-            /*
-            $this->app->bind('path.storage', function () {
-                
-                        return 'your/path/here';
-                
-            });
-            */
-
-          
-            //$this->app->useStoragePath(config('what_ever_you_want'));
-
-
-
-            
-  
-            //$this->app->useStoragePath( 'your/path/here2' );
         }
         
         private function registerConsoleCommands()
