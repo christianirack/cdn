@@ -27,8 +27,7 @@
     "autoload": {
         "psr-4": {
             "CDN\\": "src/"
-        },
-        "files": ["src/CustomHelpers.php"]   
+        }
     },
     "extra": {
         "laravel": {
