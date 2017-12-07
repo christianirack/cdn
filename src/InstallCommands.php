@@ -1,6 +1,6 @@
 <?php
 
-namespace CDN\COMMANDS;
+namespace CDN;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Config;
@@ -32,7 +32,7 @@ class InstallCommands extends Command
     public function handle()
     {
         //$this->exportViews();
-        copy(__dir__."/../TEMPLATES/Envoy.blade.php", base_path()."/Envoy.blade.php");
+        copy(__dir__."/templates/Envoy.blade.php", base_path()."/Envoy.blade.php");
         chmod(base_path()."/Envoy.blade.php", 0777);
         $this->info('Creating the remote directory...');
        exec('envoy run cdn');
