@@ -99,12 +99,6 @@ class SftpCustomAdapter extends AbstractFtpAdapter
         //return $this->getDriver;
         //hack
         return getenv("CDN_PUBLIC");
-      }
-
-    public function getUrl(){
-      //return $this->getDriver;
-      //hack
-      return getenv("CDN_PUBLIC");
     }
 
     /**
