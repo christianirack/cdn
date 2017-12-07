@@ -74,7 +74,7 @@
                 return '7';
             });
             */
-            $this->app->useStoragePath('example6');
+            $this->app->useStoragePath(config('what_ever_you_want'));
 
 
 
